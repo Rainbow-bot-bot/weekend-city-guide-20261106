@@ -1,3 +1,4 @@
+import{additionalStories}from'./city-data.js?v=20261106c';
 // Original editorial introductions, not quotations or visitor testimonials.
 export const stories = {
   bund: {
@@ -43,3 +44,6 @@ export const stories = {
 };
 
 export const quickReasons={bund:'不花门票钱，把经典江景与老建筑一起看。',wukang:'看建筑、逛小店，中途随时停下来喝杯咖啡。',park:'约 40 元、1.8 公里，适合省钱又少走路的下午。',museum:'雨天也能慢慢看展；学生票预算，先核对购票资格。',westbund:'看展和滨江散步穿插着来，不入馆也有公共空间可逛。',library:'约 0.8 公里，室内停留为主，不买书也能待一会儿。',night:'傍晚才出发也来得及，适合边走边聊、顺路吃晚饭。',music:'把音乐当散步的话题，适合一起逛店、分享歌单。'};
+
+Object.assign(stories,additionalStories);
+Object.assign(quickReasons,{'hz-lake':'只走一段湖岸，不绕整座西湖，边散步边休息。','hz-museum':'展厅与湖景放在一起，步行约1.2公里。','sz-oldtown':'古街、河道与晚饭连在一起，慢慢逛就好。','sz-museum':'把时间留给展品与建筑，先预约东北街本馆。','bj-hutong':'公共街巷接上湖岸，不用买门票也能看老城。','bj-museum':'少走路，室内看城市历史，常设展免费。','cd-park':'公园喝茶、街区漫游，中途随时坐下来。','cd-museum':'展馆紧邻天府广场，雨天也好安排。'});

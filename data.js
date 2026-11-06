@@ -1,3 +1,4 @@
+import{additionalCities,additionalRoutes,additionalPhotos}from'./city-data.js?v=20261106c';
 export const photoSources={
 skyline:{file:'skyline.jpg',place:'上海外滩与陆家嘴天际线',author:'Edward He',url:'https://unsplash.com/photos/uKyzXEc2k_s'},
 street:{file:'street.jpg',place:'上海人民公园',author:'Baydar Bakht',url:'https://unsplash.com/photos/a-couple-of-people-walking-on-a-sidewalk-yYfyIF5LUoE'},
@@ -15,9 +16,14 @@ export const routes=[
 {id:'night',title:'等城市，亮起灯',kicker:'AFTER DARK / 城市夜游',tag:'两个人刚好',image:'skyline',interests:['walk','food'],hours:3,km:2.5,indoor:false,cost:{traffic:10,food:55,ticket:0,extra:15},people:[2,4],intro:'把出发时间放到傍晚，从外白渡桥一路走向外滩，再去南京东路找晚餐。景观灯光受实际安排影响，不承诺每日固定亮灯；请确认返程交通时间。',stops:[['17:00','外白渡桥','先沿公共区域看建筑与江景。'],['18:00','外滩','在江边慢走，注意人流与天气。'],['19:00','南京东路','吃饭后返程，留意末班车时间。']],alternate:'library',guideGroup:'central'},
 {id:'music',title:'唱片、咖啡和一首老歌',kicker:'MUSIC BREAK / 音乐慢时光',tag:'主题探索',image:'wukang',interests:['music','food','walk'],hours:3,km:2,indoor:false,cost:{traffic:10,food:50,ticket:0,extra:30},people:[1,2,4],intro:'沿武康路和安福路逛街，把音乐当作这次散步的主题。用地图中的唱片店搜索查看附近实际营业店铺，再决定停留。此路线不包含已确认的现场演出。',stops:[['14:00','武康路','先在街区散步，找找唱片与音乐主题店。'],['15:00','安福路唱片店','打开地图查当前店铺与营业信息，不保证具体商家营业。'],['16:00','安福路','找一个能坐下聊天的地方。']],alternate:'library',guideGroup:'wukang'}
 ];
+Object.assign(photoSources,additionalPhotos);
+for(const r of routes){r.city='shanghai';r.cityName='上海'}
+routes.push(...additionalRoutes);
+export const cities=[{id:'shanghai',name:'上海',english:'SHANGHAI',heroImage:'skyline'},...additionalCities];
+export function budgetFromInput(value){if(String(value).trim()==='')return Infinity;const n=Number(value);return Number.isFinite(n)&&n>=0&&n<=10000?n:null}
 export const totalCost=r=>Object.values(r.cost).reduce((a,b)=>a+b,0);
-export function recommendRoutes(filters){return routes.filter(r=>totalCost(r)<=filters.budget&&(!filters.easy||r.km<=2)&&(!filters.interests.length||filters.interests.some(t=>r.interests.includes(t)))&&(filters.duration==='all'||filters.duration==='day'||r.hours<=(filters.duration==='short'?3:5))&&(filters.weather!=='rainy'||r.indoor)).map(r=>({route:r,score:(r.people.includes(filters.people)?8:0)+filters.interests.filter(t=>r.interests.includes(t)).length*12+(filters.weather==='sunny'&&!r.indoor?10:0)+(r.id==='wukang'?2:0)})).sort((a,b)=>b.score-a.score).map(x=>x.route)}
-export function mapUrl(place){return 'https://uri.amap.com/search?keyword='+encodeURIComponent(place)+'&city='+encodeURIComponent('上海')+'&view=map&src=weekendgo&coordinate=gaode'}
+export function recommendRoutes(filters){return routes.filter(r=>(!filters.city||r.city===filters.city)&&totalCost(r)<=filters.budget&&(!filters.easy||r.km<=2)&&(!filters.interests.length||filters.interests.some(t=>r.interests.includes(t)))&&(filters.duration==='all'||filters.duration==='day'||r.hours<=(filters.duration==='short'?3:5))&&(filters.weather!=='rainy'||r.indoor)).map(r=>({route:r,score:(r.people.includes(filters.people)?8:0)+filters.interests.filter(t=>r.interests.includes(t)).length*12+(filters.weather==='sunny'&&!r.indoor?10:0)+(r.id==='wukang'?2:0)})).sort((a,b)=>b.score-a.score).map(x=>x.route)}
+export function mapUrl(place,city='上海'){return 'https://uri.amap.com/search?keyword='+encodeURIComponent(place)+'&city='+encodeURIComponent(city)+'&view=map&src=weekendgo&coordinate=gaode'}
 export const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function encodeShare(value){return btoa(Array.from(new TextEncoder().encode(JSON.stringify(value)),b=>String.fromCharCode(b)).join('')).replaceAll('+','-').replaceAll('/','_').replace(/=+$/,'')}
 export function decodeShare(value){if(value.length>18000)throw new Error('分享内容过长');const normal=value.replaceAll('-','+').replaceAll('_','/');return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(normal),c=>c.charCodeAt(0))))}

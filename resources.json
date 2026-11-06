@@ -10,7 +10,7 @@
       "name": "全季酒店（上海徐汇岳阳路店）",
       "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-2298617/ji-hotel/",
       "address": "徐汇区岳阳路58号",
-      "area": "衡山路·淮海路·衡复街区",
+      "area": "岳阳路 · 衡复街区",
       "position": "酒店页列武康路约1.5公里、安福路约1.4公里，适合作为衡复街区落脚点。",
       "phone": "021-52731133",
       "checkIn": "14:00后",
@@ -21,7 +21,17 @@
         "商务大床房"
       ],
       "tip": "适合武康路与衡复街区探索；房型与当天房价以详情页为准。",
-      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页",
+      "image": "wukang",
+      "environment": "老住宅、沿街小店与梧桐街道相间，适合把咖啡和建筑散步放在一起。",
+      "geography": "徐汇区岳阳路，靠近衡山路一带；武康路、安福路在同一片衡复街区。",
+      "reason": "想慢慢逛武康路和安福路，可以把住处放在衡复街区，途中随时找地方坐下。",
+      "fit": "武康路 · 安福路 · 衡复街区",
+      "key": "wukang",
+      "city": "上海",
+      "cityId": "shanghai",
+      "imageCaption": "周边实拍 · 武康大楼",
+      "caution": ""
     },
     "guides": [
       {
@@ -54,7 +64,7 @@
       "name": "城际上海外滩南京路步行街酒店",
       "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-131743584/intercity-hotel-shanghai-nanjing-road-pedestrian-street-the-bund/",
       "address": "黄浦区福州路431号",
-      "area": "人民广场·南京东路",
+      "area": "福州路 · 人民广场",
       "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。",
       "phone": "021-63203999",
       "checkIn": "15:00后",
@@ -65,7 +75,17 @@
         "好莱坞大床房"
       ],
       "tip": "位于福州路，适合人民广场、书城与外滩路线；住宿费另计。",
-      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页",
+      "image": "bookstore",
+      "environment": "福州路以书店、文化商铺和沿街餐饮为主，旁边可接南京东路商业街。",
+      "geography": "黄浦区福州路，位于人民广场与外滩之间的街区。",
+      "reason": "逛完书城可以顺路吃饭，去人民广场看展或去外滩散步，都能从这一片接上。",
+      "fit": "书城 · 人民广场 · 外滩",
+      "key": "central",
+      "city": "上海",
+      "cityId": "shanghai",
+      "imageCaption": "周边实拍 · 福州路书城",
+      "caution": ""
     },
     "guides": [
       {
@@ -92,7 +112,7 @@
       "name": "全季酒店（上海徐汇滨江西岸艺术中心店）",
       "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-122191710/ji-hotel/",
       "address": "徐汇区龙腾大道2879号1层",
-      "area": "西岸·徐汇滨江",
+      "area": "龙腾大道 · 徐汇滨江",
       "position": "酒店页列西岸艺术中心约760米、徐汇滨江绿地约620米。",
       "phone": "021-33686866",
       "checkIn": "14:00后",
@@ -103,7 +123,17 @@
         "家庭房"
       ],
       "tip": "页面提示可能在其他地址办理入住，到店前请电话确认办理地点。",
-      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页",
+      "image": "westbund",
+      "environment": "周边以滨江步道、艺术场馆和公共绿地为主，适合把散步与看展连起来。",
+      "geography": "徐汇区龙腾大道，黄浦江西岸的徐汇滨江段。",
+      "reason": "以西岸美术馆和滨江散步为主时，这里的位置能让一天的活动集中在同一片区。",
+      "fit": "徐汇滨江 · 美术馆 · 艺术中心",
+      "key": "westbund",
+      "city": "上海",
+      "cityId": "shanghai",
+      "imageCaption": "周边实拍 · 徐汇滨江",
+      "caution": "入住手续可能在其他地址办理，请先致电确认。"
     },
     "guides": [
       {
@@ -142,8 +172,18 @@
       "name": "上海东怡大酒店（Parkview Hotel）",
       "url": "https://www.trip.com/hotels/shanghai-hotel-detail-397163/parkview-hotel/",
       "address": "浦东新区丁香路555号",
-      "area": "世纪公园·东方艺术中心",
-      "position": "处于东馆所在的浦东文化片区；酒店页列东方艺术中心约200米、上海博物馆东馆约590米。不声称到图书馆的精确步行时间。"
+      "area": "福州路 · 人民广场",
+      "position": "处于东馆所在的浦东文化片区；酒店页列东方艺术中心约200米、上海博物馆东馆约590米。不声称到图书馆的精确步行时间。",
+      "image": "bookstore",
+      "environment": "福州路以书店、文化商铺和沿街餐饮为主，旁边可接南京东路商业街。",
+      "geography": "黄浦区福州路，位于人民广场与外滩之间的街区。",
+      "reason": "逛完书城可以顺路吃饭，去人民广场看展或去外滩散步，都能从这一片接上。",
+      "fit": "书城 · 人民广场 · 外滩",
+      "key": "central",
+      "city": "上海",
+      "cityId": "shanghai",
+      "imageCaption": "周边实拍 · 福州路书城",
+      "caution": ""
     },
     "guides": [
       {
@@ -169,7 +209,7 @@
       "name": "城际上海外滩南京路步行街酒店",
       "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-131743584/intercity-hotel-shanghai-nanjing-road-pedestrian-street-the-bund/",
       "address": "黄浦区福州路431号",
-      "area": "人民广场·南京东路",
+      "area": "福州路 · 人民广场",
       "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。",
       "phone": "021-63203999",
       "checkIn": "15:00后",
@@ -180,7 +220,17 @@
         "好莱坞大床房"
       ],
       "tip": "位于福州路，适合人民广场、书城与外滩路线；住宿费另计。",
-      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页",
+      "image": "bookstore",
+      "environment": "福州路以书店、文化商铺和沿街餐饮为主，旁边可接南京东路商业街。",
+      "geography": "黄浦区福州路，位于人民广场与外滩之间的街区。",
+      "reason": "逛完书城可以顺路吃饭，去人民广场看展或去外滩散步，都能从这一片接上。",
+      "fit": "书城 · 人民广场 · 外滩",
+      "key": "central",
+      "city": "上海",
+      "cityId": "shanghai",
+      "imageCaption": "周边实拍 · 福州路书城",
+      "caution": ""
     },
     "tips": [
       "人民广场馆当前为美洲古代文明特展，所有观众需购票，不是免费常设展。",
@@ -197,7 +247,7 @@
       "name": "城际上海外滩南京路步行街酒店",
       "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-131743584/intercity-hotel-shanghai-nanjing-road-pedestrian-street-the-bund/",
       "address": "黄浦区福州路431号",
-      "area": "人民广场·南京东路",
+      "area": "福州路 · 人民广场",
       "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。",
       "phone": "021-63203999",
       "checkIn": "15:00后",
@@ -208,12 +258,300 @@
         "好莱坞大床房"
       ],
       "tip": "位于福州路，适合人民广场、书城与外滩路线；住宿费另计。",
-      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页",
+      "image": "bookstore",
+      "environment": "福州路以书店、文化商铺和沿街餐饮为主，旁边可接南京东路商业街。",
+      "geography": "黄浦区福州路，位于人民广场与外滩之间的街区。",
+      "reason": "逛完书城可以顺路吃饭，去人民广场看展或去外滩散步，都能从这一片接上。",
+      "fit": "书城 · 人民广场 · 外滩",
+      "key": "central",
+      "city": "上海",
+      "cityId": "shanghai",
+      "imageCaption": "周边实拍 · 福州路书城",
+      "caution": ""
     },
     "tips": [
       "上海书城福州路店位于黄浦区福州路465号，按书店实际营业安排到访。",
       "以店内逛书与短途步行为主；买书与额外购物不含在默认预算。",
       "这条路线没有预设付费活动。可从福州路附近的住处或你自己的地址出发。"
+    ]
+  },
+  "hz-lake": {
+    "guide": {
+      "title": "杭州文旅｜西湖与孤山游览手册",
+      "url": "https://wgly.hangzhou.gov.cn/attach/538/2307051510367229.pdf"
+    },
+    "hotel": {
+      "name": "杭州华侨饭店（西湖音乐喷泉店）",
+      "url": "https://hk.trip.com/hotels/hangzhou-hotel-detail-445479/hangzhou-overseas-chinese-hotel/",
+      "address": "浙江省杭州市上城区湖滨路39号",
+      "city": "杭州",
+      "phone": "+86-571-87685555",
+      "area": "湖滨 / 西湖东岸",
+      "environment": "湖滨步行街与商业区，附近有餐饮、商场及西湖游览空间。",
+      "geography": "位于西湖东岸湖滨路，龙翔桥地铁站一带。",
+      "reason": "以西湖散步为主时，住在湖滨能减少当天在城内折返。",
+      "label": "西湖东岸落脚点",
+      "fit": "西湖 · 湖滨 · 孤山",
+      "aliases": [
+        "杭州华侨饭店",
+        "杭州华侨饭店（西湖音乐喷泉店）",
+        "湖滨"
+      ],
+      "image": "hz-westlake",
+      "imageCaption": "周边实拍 · 西湖白堤（非酒店建筑）",
+      "key": "hangzhou",
+      "cityId": "hangzhou"
+    },
+    "tips": [
+      "本路线不含游船、登岛或收费景点。",
+      "下雨、强风时改选室内路线。"
+    ]
+  },
+  "hz-museum": {
+    "guide": {
+      "title": "浙江省博物馆官方参观信息",
+      "url": "https://www.zjmuseum.com.cn/cn/"
+    },
+    "hotel": {
+      "name": "杭州华侨饭店（西湖音乐喷泉店）",
+      "url": "https://hk.trip.com/hotels/hangzhou-hotel-detail-445479/hangzhou-overseas-chinese-hotel/",
+      "address": "浙江省杭州市上城区湖滨路39号",
+      "city": "杭州",
+      "phone": "+86-571-87685555",
+      "area": "湖滨 / 西湖东岸",
+      "environment": "湖滨步行街与商业区，附近有餐饮、商场及西湖游览空间。",
+      "geography": "位于西湖东岸湖滨路，龙翔桥地铁站一带。",
+      "reason": "以西湖散步为主时，住在湖滨能减少当天在城内折返。",
+      "label": "西湖东岸落脚点",
+      "fit": "西湖 · 湖滨 · 孤山",
+      "aliases": [
+        "杭州华侨饭店",
+        "杭州华侨饭店（西湖音乐喷泉店）",
+        "湖滨"
+      ],
+      "image": "hz-westlake",
+      "imageCaption": "周边实拍 · 西湖白堤（非酒店建筑）",
+      "key": "hangzhou",
+      "cityId": "hangzhou"
+    },
+    "tips": [
+      "常规开放周二至周日9:00—17:00，16:30停止入场；周一闭馆，法定节假日调整以公告为准。",
+      "个人常规参观免预约，携带实体身份证；特殊临展可能另有收费或预约。"
+    ]
+  },
+  "sz-oldtown": {
+    "guide": {
+      "title": "苏州市文旅局：市井街巷",
+      "url": "https://www.suzhou.gov.cn/gsbdbwlyjc/yyou/202008/864ea406522540949b12ca1b1c3adef2.shtml"
+    },
+    "hotel": {
+      "name": "汉庭酒店（苏州观前街察院场地铁站店）",
+      "url": "https://hk.trip.com/hotels/suzhou-hotel-detail-68091728/hanting-hotel/",
+      "address": "江苏省苏州市姑苏区人民路1331号",
+      "city": "苏州",
+      "phone": "+86-512-68113777 转0",
+      "area": "观前街 / 察院场",
+      "environment": "古城商业街区，附近有观前街、餐饮及购物场所。",
+      "geography": "位于人民路、察院场地铁站一带；可从这里前往平江路及东北街博物馆片区。",
+      "reason": "适合以观前街、平江路和苏博本馆为半日活动范围的学生。",
+      "label": "古城地铁落脚点",
+      "fit": "观前街 · 平江路 · 苏博",
+      "aliases": [
+        "汉庭苏州观前街察院场店",
+        "汉庭酒店（苏州观前街察院场地铁站店）",
+        "观前街"
+      ],
+      "image": "sz-pingjiang",
+      "imageCaption": "周边实拍 · 平江历史文化街区河道与民居（非酒店建筑）",
+      "key": "suzhou",
+      "cityId": "suzhou"
+    },
+    "tips": [
+      "主线路只逛公共街道；评弹、游船等另行消费。",
+      "河边石板遇雨易滑，周末人流较多。"
+    ]
+  },
+  "sz-museum": {
+    "guide": {
+      "title": "苏州官方文旅平台：苏州博物馆",
+      "url": "https://visitsz.wglj.suzhou.com.cn/venue-detail.aspx?Id=37"
+    },
+    "hotel": {
+      "name": "汉庭酒店（苏州观前街察院场地铁站店）",
+      "url": "https://hk.trip.com/hotels/suzhou-hotel-detail-68091728/hanting-hotel/",
+      "address": "江苏省苏州市姑苏区人民路1331号",
+      "city": "苏州",
+      "phone": "+86-512-68113777 转0",
+      "area": "观前街 / 察院场",
+      "environment": "古城商业街区，附近有观前街、餐饮及购物场所。",
+      "geography": "位于人民路、察院场地铁站一带；可从这里前往平江路及东北街博物馆片区。",
+      "reason": "适合以观前街、平江路和苏博本馆为半日活动范围的学生。",
+      "label": "古城地铁落脚点",
+      "fit": "观前街 · 平江路 · 苏博",
+      "aliases": [
+        "汉庭苏州观前街察院场店",
+        "汉庭酒店（苏州观前街察院场地铁站店）",
+        "观前街"
+      ],
+      "image": "sz-pingjiang",
+      "imageCaption": "周边实拍 · 平江历史文化街区河道与民居（非酒店建筑）",
+      "key": "suzhou",
+      "cityId": "suzhou"
+    },
+    "tips": [
+      "本馆免费，须实名分时预约；可提前七天（含当天）通过馆方官网、官方公众号或“苏州博物馆全预约”小程序办理。",
+      "常规周二至周日9:00—17:00，16:00停止入馆；周一闭馆（法定节假日除外）。"
+    ]
+  },
+  "bj-hutong": {
+    "guide": {
+      "title": "西城官方｜什刹海致敬经典必选之旅",
+      "url": "https://www.bjxch.gov.cn/rwxc/xxxq/pnidpv954519.html"
+    },
+    "hotel": {
+      "name": "北京什刹海皮影文化主题酒店（恭王府店）",
+      "url": "https://hk.trip.com/hotels/beijing-hotel-detail-374796/beijing-shichahai-shadow-art-performance-courtyard/",
+      "address": "北京市西城区松树街24号",
+      "city": "北京",
+      "phone": "+86-10-83287847",
+      "area": "什刹海 · 恭王府片区",
+      "environment": "位于松树街胡同片区，周边是老城街巷与文化景点。",
+      "geography": "西城区松树街，接续什刹海及烟袋斜街散步线；去首都博物馆需另乘公共交通。",
+      "reason": "想把湖边与胡同留给傍晚，可以住在这一片；皮影主题也比普通连锁更有老城记忆点。",
+      "label": "胡同文化住宿",
+      "fit": "什刹海 · 烟袋斜街 · 胡同",
+      "aliases": [
+        "北京什刹海皮影文化酒店",
+        "福禄四合院宾馆",
+        "北京什刹海皮影文化主题酒店（恭王府店）",
+        "什刹海 · 恭王府片区"
+      ],
+      "image": "bj-hutong",
+      "sourceURLs": [
+        "https://hk.trip.com/hotels/beijing-hotel-detail-374796/beijing-shichahai-shadow-art-performance-courtyard/",
+        "https://s.visitbeijing.com.cn/index.php/hotel/115"
+      ],
+      "phoneNote": "Trip.com当前详情电话；北京旅游网旧资料为010-83287846。",
+      "key": "beijing",
+      "cityId": "beijing"
+    },
+    "tips": [
+      "路线只含公共街巷与湖岸；游船、餐饮、购物不含。",
+      "阴雨或大风时缩短湖岸段，胡同拍照避开居民门口。"
+    ]
+  },
+  "bj-museum": {
+    "guide": {
+      "title": "首都博物馆｜参观服务",
+      "url": "https://www.capitalmuseum.org.cn/visit"
+    },
+    "hotel": {
+      "name": "北京什刹海皮影文化主题酒店（恭王府店）",
+      "url": "https://hk.trip.com/hotels/beijing-hotel-detail-374796/beijing-shichahai-shadow-art-performance-courtyard/",
+      "address": "北京市西城区松树街24号",
+      "city": "北京",
+      "phone": "+86-10-83287847",
+      "area": "什刹海 · 恭王府片区",
+      "environment": "位于松树街胡同片区，周边是老城街巷与文化景点。",
+      "geography": "西城区松树街，接续什刹海及烟袋斜街散步线；去首都博物馆需另乘公共交通。",
+      "reason": "想把湖边与胡同留给傍晚，可以住在这一片；皮影主题也比普通连锁更有老城记忆点。",
+      "label": "胡同文化住宿",
+      "fit": "什刹海 · 烟袋斜街 · 胡同",
+      "aliases": [
+        "北京什刹海皮影文化酒店",
+        "福禄四合院宾馆",
+        "北京什刹海皮影文化主题酒店（恭王府店）",
+        "什刹海 · 恭王府片区"
+      ],
+      "image": "bj-hutong",
+      "sourceURLs": [
+        "https://hk.trip.com/hotels/beijing-hotel-detail-374796/beijing-shichahai-shadow-art-performance-courtyard/",
+        "https://s.visitbeijing.com.cn/index.php/hotel/115"
+      ],
+      "phoneNote": "Trip.com当前详情电话；北京旅游网旧资料为010-83287846。",
+      "key": "beijing",
+      "cityId": "beijing"
+    },
+    "tips": [
+      "官网现行时间为9:00—17:00，16:00停止入馆，每周二闭馆。",
+      "携带有效身份证件，按北门安检登记安排入馆；预约和临时调整可通过官网查询。",
+      "常设展免费，收费特展另计。"
+    ]
+  },
+  "cd-park": {
+    "guide": {
+      "title": "人民公园｜官方游园信息",
+      "url": "http://www.cdpeoplespark.cn/"
+    },
+    "hotel": {
+      "name": "宜必思成都宽窄巷子中心酒店",
+      "url": "https://hk.trip.com/hotels/chengdu-hotel-detail-71325116/ibis-hotel/",
+      "address": "四川省成都市青羊区东城根下街28号国信广场8—12楼",
+      "city": "成都",
+      "phone": "028-88860066",
+      "area": "东城根下街 · 骡马市片区",
+      "environment": "中心城区商业街区，周边有新城市广场、餐饮与购物场所。",
+      "geography": "国信广场8—12楼，靠近骡马市地铁站；可接续宽窄巷子、人民公园及天府广场线路。",
+      "reason": "经济型连锁，市中心逛街看展便于安排，适合结伴出行按日期比较房型。",
+      "label": "市中心经济型",
+      "fit": "人民公园 · 宽窄巷子 · 成博",
+      "aliases": [
+        "宜必思酒店（成都宽窄巷子中心酒店）",
+        "Ibis Hotel (Chengdu Wide and Narrow Alleys Central Hotel)",
+        "宜必思成都宽窄巷子中心酒店",
+        "东城根下街 · 骡马市片区"
+      ],
+      "image": "cd-park",
+      "sourceURLs": [
+        "https://hk.trip.com/hotels/chengdu-hotel-detail-71325116/ibis-hotel/",
+        "https://m.huazhu.com/Hotel/Detail/9005040",
+        "https://all.accor.com/hotel/B8T8/index.zh.shtml"
+      ],
+      "key": "chengdu",
+      "cityId": "chengdu"
+    },
+    "tips": [
+      "公园与街区主打公共空间；茶、采耳、展览、购物均为自选。",
+      "当前官网实拍选自往期花展，不承诺到访时有相同装置。"
+    ]
+  },
+  "cd-museum": {
+    "guide": {
+      "title": "成都博物馆｜参观指南",
+      "url": "https://www.cdmuseum.com/zhinan/"
+    },
+    "hotel": {
+      "name": "宜必思成都宽窄巷子中心酒店",
+      "url": "https://hk.trip.com/hotels/chengdu-hotel-detail-71325116/ibis-hotel/",
+      "address": "四川省成都市青羊区东城根下街28号国信广场8—12楼",
+      "city": "成都",
+      "phone": "028-88860066",
+      "area": "东城根下街 · 骡马市片区",
+      "environment": "中心城区商业街区，周边有新城市广场、餐饮与购物场所。",
+      "geography": "国信广场8—12楼，靠近骡马市地铁站；可接续宽窄巷子、人民公园及天府广场线路。",
+      "reason": "经济型连锁，市中心逛街看展便于安排，适合结伴出行按日期比较房型。",
+      "label": "市中心经济型",
+      "fit": "人民公园 · 宽窄巷子 · 成博",
+      "aliases": [
+        "宜必思酒店（成都宽窄巷子中心酒店）",
+        "Ibis Hotel (Chengdu Wide and Narrow Alleys Central Hotel)",
+        "宜必思成都宽窄巷子中心酒店",
+        "东城根下街 · 骡马市片区"
+      ],
+      "image": "cd-park",
+      "sourceURLs": [
+        "https://hk.trip.com/hotels/chengdu-hotel-detail-71325116/ibis-hotel/",
+        "https://m.huazhu.com/Hotel/Detail/9005040",
+        "https://all.accor.com/hotel/B8T8/index.zh.shtml"
+      ],
+      "key": "chengdu",
+      "cityId": "chengdu"
+    },
+    "tips": [
+      "周二至周四、周日9:00—17:00，16:30停止入馆；周五、周六9:00—20:30，20:00停止入馆。",
+      "周一闭馆，法定节假日除外；预约、临展收费与临时调整以官网为准。",
+      "常设展免费，收费特展另计。"
     ]
   }
 }
