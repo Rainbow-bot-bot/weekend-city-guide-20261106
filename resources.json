@@ -1,0 +1,144 @@
+{
+  "wukang": {
+    "guide": {
+      "title": "漫游慢品武康路 City Walk",
+      "publisher": "上海市文旅推广网",
+      "url": "https://www.meet-in-shanghai.net/cn/guide/roam-the-city-walk-on-wukang-road-933872/",
+      "description": "含武康大楼核心圈：旅游咨询中心→武康大楼→邮政所→宋庆龄故居。"
+    },
+    "hotel": {
+      "name": "全季酒店（上海徐汇岳阳路店）",
+      "url": "https://hotels.ctrip.com/hotels/2298617.html",
+      "address": "徐汇区岳阳路58号",
+      "area": "衡山路·淮海路·衡复街区",
+      "position": "酒店页列武康路约1.5公里、安福路约1.4公里，适合作为衡复街区落脚点。"
+    },
+    "guides": [
+      {
+        "title": "漫游慢品武康路 City Walk",
+        "publisher": "上海市文旅推广网",
+        "url": "https://www.meet-in-shanghai.net/cn/guide/roam-the-city-walk-on-wukang-road-933872/",
+        "description": "含武康大楼核心圈：旅游咨询中心→武康大楼→邮政所→宋庆龄故居。"
+      },
+      {
+        "title": "徐家汇源 City Walk",
+        "publisher": "上海市文旅推广网",
+        "url": "https://www.meet-in-shanghai.net/cn/guide/xujiahuiyuan-city-walk-611364/",
+        "description": "徐家汇书院、气象博物馆、百代小楼等线路。藏书楼在此旧攻略中标注维修暂停开放，勿写成保证可入内。"
+      }
+    ]
+  },
+  "central": {
+    "guide": {
+      "title": "黄浦深处探摩登",
+      "publisher": "上海市文旅推广网",
+      "url": "https://www.meet-in-shanghai.net/cn/shanghai-citywalk-route-recommendation/explore-the-depths-of-huangpu-to-explore-modernity-352163/",
+      "description": "官方线路：人民广场→南京路步行街→外滩建筑群→洛克·外滩源。人民公园可作为人民广场侧的自行延伸，不冒充原文线路。"
+    },
+    "hotel": {
+      "name": "城际上海外滩南京路步行街酒店",
+      "url": "https://hotels.ctrip.com/hotels/131743584.html",
+      "address": "黄浦区福州路431号",
+      "area": "人民广场·南京东路",
+      "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。"
+    },
+    "guides": [
+      {
+        "title": "黄浦深处探摩登",
+        "publisher": "上海市文旅推广网",
+        "url": "https://www.meet-in-shanghai.net/cn/shanghai-citywalk-route-recommendation/explore-the-depths-of-huangpu-to-explore-modernity-352163/",
+        "description": "官方线路：人民广场→南京路步行街→外滩建筑群→洛克·外滩源。人民公园可作为人民广场侧的自行延伸，不冒充原文线路。"
+      }
+    ]
+  },
+  "westbund": {
+    "guide": {
+      "title": "艺术西岸 City Walk",
+      "publisher": "上海市文旅推广网",
+      "url": "https://www.meet-in-shanghai.net/cn/shanghai-citywalk-route-recommendation/city-walk-west-bund-of-the-arts-574673/",
+      "description": "官方线路串联西岸梦中心、油罐艺术中心、西岸美术馆、龙美术馆、星美术馆、西岸中環。"
+    },
+    "hotel": {
+      "name": "全季酒店（上海徐汇滨江西岸艺术中心店）",
+      "url": "https://hotels.ctrip.com/hotels/122191710.html",
+      "address": "徐汇区龙腾大道2879号1层",
+      "area": "西岸·徐汇滨江",
+      "position": "酒店页列西岸艺术中心约760米、徐汇滨江绿地约620米。"
+    },
+    "guides": [
+      {
+        "title": "艺术西岸 City Walk",
+        "publisher": "上海市文旅推广网",
+        "url": "https://www.meet-in-shanghai.net/cn/shanghai-citywalk-route-recommendation/city-walk-west-bund-of-the-arts-574673/",
+        "description": "官方线路串联西岸梦中心、油罐艺术中心、西岸美术馆、龙美术馆、星美术馆、西岸中環。"
+      },
+      {
+        "title": "西岸美术馆参观指南",
+        "publisher": "西岸美术馆",
+        "url": "https://wbmshanghai.com/zh-hans/page/visit",
+        "description": "场馆参观安排与购票入口。"
+      },
+      {
+        "title": "龙美术馆（西岸馆）",
+        "publisher": "WEST BUND 西岸",
+        "url": "https://www.westbund.com/cn/index/Visitors_guide/Location/Long-Museum-West-Bund.html",
+        "description": "龙腾大道3398号，西岸官方场馆介绍。"
+      }
+    ]
+  },
+  "library": {
+    "guide": {
+      "title": "上海图书馆东馆服务与楼层导览",
+      "publisher": "上海图书馆",
+      "url": "https://www.library.sh.cn/service/east",
+      "description": "官方东馆服务、楼层导览、馆内导航与公共艺术介绍。"
+    },
+    "hotel": {
+      "name": "上海东怡大酒店（Parkview Hotel）",
+      "url": "https://www.trip.com/hotels/shanghai-hotel-detail-397163/parkview-hotel/",
+      "address": "浦东新区丁香路555号",
+      "area": "世纪公园·东方艺术中心",
+      "position": "处于东馆所在的浦东文化片区；酒店页列东方艺术中心约200米、上海博物馆东馆约590米。不声称到图书馆的精确步行时间。"
+    },
+    "guides": [
+      {
+        "title": "上海图书馆东馆服务与楼层导览",
+        "publisher": "上海图书馆",
+        "url": "https://www.library.sh.cn/service/east",
+        "description": "官方东馆服务、楼层导览、馆内导航与公共艺术介绍。"
+      },
+      {
+        "title": "上海图书馆参观预约",
+        "publisher": "上海图书馆",
+        "url": "https://www.library.sh.cn/service/visit",
+        "description": "东馆自助导览等参观服务；座位、活动或特定服务的预约以官网当前要求为准。"
+      }
+    ]
+  },
+  "museum": {
+    "guide": {
+      "title": "人民广场馆 · 官方购票与预约指南",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/I00005037"
+    },
+    "hotel": {
+      "name": "城际上海外滩南京路步行街酒店",
+      "url": "https://hotels.ctrip.com/hotels/131743584.html",
+      "address": "黄浦区福州路431号",
+      "area": "人民广场·南京东路",
+      "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。"
+    }
+  },
+  "bookstore": {
+    "guide": {
+      "title": "上海书城福州路店·官方攻略",
+      "url": "https://www.meet-in-shanghai.net/cn/guide/open-this-saturdayshanghai-book-city-is-back-with-a-new-look-shanghaistyle-urban-archaeology-537899/"
+    },
+    "hotel": {
+      "name": "城际上海外滩南京路步行街酒店",
+      "url": "https://hotels.ctrip.com/hotels/131743584.html",
+      "address": "黄浦区福州路431号",
+      "area": "人民广场·南京东路",
+      "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。"
+    }
+  }
+}

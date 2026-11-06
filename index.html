@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#244e43"><meta name="description" content="不再纠结周末去哪玩。按兴趣、天气与预算，发现上海的半日探索路线，邀请朋友出发，留下你的城市足迹。">
+  <title>周末就走 · 把周末还给好奇心</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23244e43'/%3E%3Cpath d='M18 43L28 19l5 15 14 5-29 4Z' fill='%23f4e5bc'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="#" aria-label="周末就走首页"><span class="brand-mark">↗</span><span>周末就走<small>WEEKEND, WANDER.</small></span></a><nav aria-label="主导航"><button class="nav-link active" data-view="discover">发现周末</button><button class="nav-link" data-view="plan">出发计划 <span id="plan-count" class="counter">0</span></button><button class="nav-link" data-view="footprints">我的足迹</button></nav><span class="city-tag"><span class="live-dot"></span> 上海 <small>城市体验版</small></span></header>
+<main>
+<section id="discover-view" class="view">
+  <div class="hero">
+    <div class="hero-copy"><div class="eyebrow"><span></span> YOUR NEXT LITTLE ADVENTURE</div><h1>把周末，<br>还给<span class="handwritten">好奇心。</span></h1><p>预算不用多，计划不用久。<br>去一条没走过的街，和喜欢的人看点新鲜的。</p><button id="explore-button" class="button primary">找个好去处 <span>↗</span></button><div class="hero-note"><span class="mini-sun">✳</span> 半天也能出发 · 不用登录，直接探索</div></div>
+    <div class="hero-art"><img src="./assets/skyline.jpg" alt="上海城市与滨水风景" fetchpriority="high"><div class="photo-shade"></div><div class="photo-caption"><span>SHANGHAI · 上海</span><strong>熟悉的城市，<br>还有没见过的一面。</strong></div><div class="photo-stamp">LET'S<br><b>GO OUT</b><span>周末行动派</span></div><div class="weather-float"><span id="hero-weather-icon">☀</span><div><strong id="hero-weather-title">晴天，去吹吹风</strong><small>天气情景演示 · 可切换</small></div><span class="weather-arrow">↗</span></div></div>
+  </div>
+  <section id="origin-panel" class="origin-panel" aria-label="出发地点"></section>
+  <div class="discovery-heading" id="explore"><div><div class="eyebrow">PICK YOUR WEEKEND</div><h2>这个周末，想怎么过？</h2></div><p>选好心情，剩下的交给路线。</p></div>
+  <div class="explore-layout">
+    <aside class="filter-panel" aria-label="探索偏好">
+      <div class="filter-title"><h3>我的出发偏好</h3><button id="reset-filters" class="text-button">重置</button></div>
+      <label class="field-label" for="budget">人均预算 <strong id="budget-value">¥150</strong></label><input id="budget" type="range" min="30" max="300" step="10" value="150"><div class="range-labels"><span>¥30</span><span>¥300</span></div>
+      <div class="field-label">和谁出发</div><div class="segmented" id="people-options"><button data-people="1">一个人</button><button class="selected" data-people="2">两个人</button><button data-people="4">三五好友</button></div>
+      <label class="field-label" for="duration">空出多少时间</label><select id="duration"><option value="all">时间都可以</option><option value="short">轻松逛逛 · 3小时内</option><option value="half" selected>半日出走 · 5小时内</option><option value="day">一整天都留给自己</option></select>
+      <div class="field-label">这次想体验 <small>可多选</small></div><div class="interest-list" id="interests"><button data-interest="art">▧ 看展看书</button><button data-interest="walk">⌁ 街区漫游</button><button data-interest="nature">♧ 亲近自然</button><button data-interest="food">♨ 逛吃寻味</button><button data-interest="music">♫ 音乐主题</button></div>
+      <label class="check-label"><input type="checkbox" id="easy"> 今天想少走一点路</label>
+      <div class="filter-tip"><span>✦</span><p>不用勾满。<br>留一点空白，给偶然的惊喜。</p></div>
+    </aside>
+    <div class="results"><div class="results-toolbar"><div class="weather-switch" aria-label="天气情景"><button class="selected" data-weather="sunny">☀ 晴天版</button><button data-weather="rainy">☂ 雨天版</button></div><span id="result-count" aria-live="polite"></span></div><div class="weather-advice" id="weather-advice"></div><div id="route-grid" class="route-grid"></div><div class="data-note"><span>ⓘ</span><p>上海示例路线与估算预算，非实时活动或天气。开放、预约、票价及实际天气请出发前核实。配图为对应地点实拍，非当天现场；详情可查看原始来源。</p></div></div>
+  </div>
+  <section class="how-it-works"><div><span>01</span><h3>少一点纠结</h3><p>预算、天气、兴趣，一起考虑。</p></div><div><span>02</span><h3>多一点同行</h3><p>把集合地点和路线，一次说清。</p></div><div><span>03</span><h3>留一点回忆</h3><p>把亲自走过的路，写成自己的攻略。</p></div></section>
+</section>
+<section id="plan-view" class="view hidden"><div class="page-heading"><div class="eyebrow">MAKE IT HAPPEN</div><h1>周末，安排上了。</h1><p>从“下次一定”，到“我们这里见”。</p></div><div id="plan-content"></div></section>
+<section id="footprints-view" class="view hidden"><div class="page-heading"><div class="eyebrow">YOUR CITY STORIES</div><h1>走过的路，都算数。</h1><p>记下一个小发现，下次也带朋友来。</p></div><div id="footprint-content"></div></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">↗</span>周末就走</a><p>城市很大，周末刚好。<span>上海体验版 · 记录保存在当前浏览器</span></p><button class="text-button" id="about-button">关于这个作品 ↗</button></footer>
+<dialog id="detail-dialog" class="detail-dialog"><button class="close-button" data-close aria-label="关闭详情">×</button><div id="detail-content"></div></dialog>
+<dialog id="share-dialog"><button class="close-button" data-close aria-label="关闭分享">×</button><div id="share-content"></div></dialog>
+<dialog id="checkin-dialog"><button class="close-button" data-close aria-label="关闭打卡">×</button><form id="checkin-form"><div class="eyebrow">A LITTLE MEMORY</div><h2>给这个周末盖个章。</h2><label class="field-label" for="checkin-route">在哪条路线留下足迹</label><select id="checkin-route" required></select><label class="field-label" for="checkin-note">有什么值得记住？</label><textarea id="checkin-note" maxlength="500" rows="5" placeholder="一家想再去的小店、一阵刚刚好的风，或一句给后来者的建议……" required></textarea><div class="form-row"><div><label class="field-label" for="checkin-cost">实际人均花费（选填）</label><input id="checkin-cost" type="number" min="0" max="10000" placeholder="¥"></div><div><label class="field-label" for="checkin-rating">这次体验</label><select id="checkin-rating"><option value="5">★★★★★ 很值得</option><option value="4">★★★★ 挺开心</option><option value="3">★★★ 还不错</option><option value="2">★★ 有点遗憾</option><option value="1">★ 不太推荐</option></select></div></div><p class="muted">手动打卡，不获取定位。仅保存在当前浏览器，分享后对方可查看。</p><button type="submit" class="button primary full-width">保存这段回忆 ↗</button></form></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="./app.js"></script>
+</body></html>
