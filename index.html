@@ -5,18 +5,18 @@
   <meta name="theme-color" content="#244e43"><meta name="description" content="不再纠结周末去哪玩。按兴趣、天气与预算，发现上海的半日探索路线，邀请朋友出发，留下你的城市足迹。">
   <title>周末就走 · 把周末还给好奇心</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23244e43'/%3E%3Cpath d='M18 43L28 19l5 15 14 5-29 4Z' fill='%23f4e5bc'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=20261106b">
 </head>
 <body>
 <header class="site-header"><a class="brand" href="#" aria-label="周末就走首页"><span class="brand-mark">↗</span><span>周末就走<small>WEEKEND, WANDER.</small></span></a><nav aria-label="主导航"><button class="nav-link active" data-view="discover">发现周末</button><button class="nav-link" data-view="plan">出发计划 <span id="plan-count" class="counter">0</span></button><button class="nav-link" data-view="footprints">我的足迹</button></nav><span class="city-tag"><span class="live-dot"></span> 上海 <small>城市体验版</small></span></header>
 <main>
 <section id="discover-view" class="view">
   <div class="hero">
-    <div class="hero-copy"><div class="eyebrow"><span></span> YOUR NEXT LITTLE ADVENTURE</div><h1>把周末，<br>还给<span class="handwritten">好奇心。</span></h1><p>预算不用多，计划不用久。<br>去一条没走过的街，和喜欢的人看点新鲜的。</p><button id="explore-button" class="button primary">找个好去处 <span>↗</span></button><div class="hero-note"><span class="mini-sun">✳</span> 半天也能出发 · 不用登录，直接探索</div></div>
+    <div class="hero-copy"><div class="eyebrow"><span></span> YOUR NEXT LITTLE ADVENTURE</div><h1>把周末，<br>还给<span class="handwritten">好奇心。</span></h1><p>周六醒来，群里还停在昨晚那句“明天去哪儿？”窗外有人提着早餐经过。你忽然不想再刷攻略了：去一条没走过的街，找一家愿意坐久一点的小店，天黑前慢慢回来。</p><button id="explore-button" class="button primary">翻开这个周末 <span>↗</span></button><div class="hero-note"><span class="mini-sun">✳</span> 半天也能出发 · 不用登录，直接探索</div></div>
     <div class="hero-art"><img src="./assets/skyline.jpg" alt="上海城市与滨水风景" fetchpriority="high"><div class="photo-shade"></div><div class="photo-caption"><span>SHANGHAI · 上海</span><strong>熟悉的城市，<br>还有没见过的一面。</strong></div><div class="photo-stamp">LET'S<br><b>GO OUT</b><span>周末行动派</span></div><div class="weather-float"><span id="hero-weather-icon">☀</span><div><strong id="hero-weather-title">晴天，去吹吹风</strong><small>天气情景演示 · 可切换</small></div><span class="weather-arrow">↗</span></div></div>
   </div>
   <section id="origin-panel" class="origin-panel" aria-label="出发地点"></section>
-  <div class="discovery-heading" id="explore"><div><div class="eyebrow">PICK YOUR WEEKEND</div><h2>这个周末，想怎么过？</h2></div><p>选好心情，剩下的交给路线。</p></div>
+  <div class="discovery-heading" id="explore"><div><div class="eyebrow">PICK YOUR WEEKEND</div><h2>这个周末，想怎么过？</h2></div><p>先读一个小故事，再决定去哪里。</p></div>
   <div class="explore-layout">
     <aside class="filter-panel" aria-label="探索偏好">
       <div class="filter-title"><h3>我的出发偏好</h3><button id="reset-filters" class="text-button">重置</button></div>
@@ -39,5 +39,5 @@
 <dialog id="share-dialog"><button class="close-button" data-close aria-label="关闭分享">×</button><div id="share-content"></div></dialog>
 <dialog id="checkin-dialog"><button class="close-button" data-close aria-label="关闭打卡">×</button><form id="checkin-form"><div class="eyebrow">A LITTLE MEMORY</div><h2>给这个周末盖个章。</h2><label class="field-label" for="checkin-route">在哪条路线留下足迹</label><select id="checkin-route" required></select><label class="field-label" for="checkin-note">有什么值得记住？</label><textarea id="checkin-note" maxlength="500" rows="5" placeholder="一家想再去的小店、一阵刚刚好的风，或一句给后来者的建议……" required></textarea><div class="form-row"><div><label class="field-label" for="checkin-cost">实际人均花费（选填）</label><input id="checkin-cost" type="number" min="0" max="10000" placeholder="¥"></div><div><label class="field-label" for="checkin-rating">这次体验</label><select id="checkin-rating"><option value="5">★★★★★ 很值得</option><option value="4">★★★★ 挺开心</option><option value="3">★★★ 还不错</option><option value="2">★★ 有点遗憾</option><option value="1">★ 不太推荐</option></select></div></div><p class="muted">手动打卡，不获取定位。仅保存在当前浏览器，分享后对方可查看。</p><button type="submit" class="button primary full-width">保存这段回忆 ↗</button></form></dialog>
 <div id="toast" role="status" aria-live="polite"></div>
-<script type="module" src="./app.js"></script>
+<script type="module" src="./app.js?v=20261106b"></script>
 </body></html>
