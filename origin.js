@@ -1,9 +1,9 @@
-import {escapeHTML as esc, mapUrl,photoSources,routes} from './data.js?v=20261106c';
+import {escapeHTML as esc, mapUrl,photoSources,routes} from './data.js?v=20261106e';
 
 export const hotelNotes = {
-  central: {label:'把住处放在书香与江风之间', reason:'福州路上的落脚点，适合把书城、人民广场和外滩放进同一个周末。不必为了不同主题反复换住处。', aliases:['城际','外滩城际','南京路城际','福州路城际','intercity','chengji','fuzhou'], fit:'书城 · 人民广场 · 外滩'},
-  wukang: {label:'想把周末留给梧桐街区', reason:'地址在岳阳路，适合以衡复街区为中心，逛武康路、安福路。选它是为了街区位置，不是为了赶景点。', aliases:['全季','岳阳','岳阳路全季','岳阳全季','全季岳阳','徐汇全季','ji hotel','quanji','yueyang'], fit:'武康路 · 安福路 · 街区漫游'},
-  westbund: {label:'把一整天交给西岸', reason:'位于龙腾大道，适合把滨江散步与美术馆放在同一天。住在这一带，行程重心就不必来回切换。', aliases:['全季','西岸','滨江全季','西岸全季','全季西岸','龙腾','艺术中心','ji hotel','quanji','xian','longteng'], fit:'徐汇滨江 · 美术馆 · 艺术半日'}
+  central: {label:'福州路 · 书城与外滩之间', reason:'福州路上的落脚点，适合把书城、人民广场和外滩放进同一个周末。不必为了不同主题反复换住处。', aliases:['城际','外滩城际','南京路城际','福州路城际','intercity','chengji','fuzhou'], fit:'书城 · 人民广场 · 外滩'},
+  wukang: {label:'岳阳路 · 衡复街区', reason:'地址在岳阳路，适合以衡复街区为中心，逛武康路、安福路。从住处可安排衡复街区的建筑步行。', aliases:['全季','岳阳','岳阳路全季','岳阳全季','全季岳阳','徐汇全季','ji hotel','quanji','yueyang'], fit:'武康路 · 安福路 · 街区漫游'},
+  westbund: {label:'龙腾大道 · 徐汇滨江', reason:'位于龙腾大道，适合把滨江散步与美术馆放在同一天。住在这一带，行程重心就不必来回切换。', aliases:['全季','西岸','滨江全季','西岸全季','全季西岸','龙腾','艺术中心','ji hotel','quanji','xian','longteng'], fit:'徐汇滨江 · 美术馆 · 艺术半日'}
 };
 const normalize = value => String(value || '').toLowerCase().replace(/[\s（）()·，,。.-]/g,'');
 export function hotelCatalogue(resources,city='shanghai') {
@@ -11,7 +11,7 @@ export function hotelCatalogue(resources,city='shanghai') {
   for(const group of groups){const h=resources[group]?.hotel;if(!h)continue;const key=h.key||group;if(!found.has(key))found.set(key,{...hotelNotes[key],...h,key,aliases:h.aliases||hotelNotes[key]?.aliases||[]})}
   return [...found.values()];
 }
-export function hotelPhoto(h){const photo=photoSources[h.image];if(!photo)return '';return `<figure class="hotel-landscape"><img src="./assets/${esc(photo.file)}?v=20261106c" alt="${esc(photo.place)}实拍" loading="lazy" data-photo-source="${esc(photo.url)}"><figcaption><a href="${esc(photo.url)}" target="_blank" rel="noopener noreferrer">周边实拍 · ${esc(photo.place)} ↗</a></figcaption></figure>`}
+export function hotelPhoto(h){const photo=photoSources[h.image];if(!photo)return '';return `<figure class="hotel-landscape"><img src="./assets/${esc(photo.file)}?v=20261106e" alt="${esc(photo.place)}实拍" loading="lazy" data-photo-source="${esc(photo.url)}"><figcaption><a href="${esc(photo.url)}" target="_blank" rel="noopener noreferrer">周边实拍 · ${esc(photo.place)} ↗</a></figcaption></figure>`}
 export function phoneURL(value){const raw=String(value).split('转')[0].replace(/[^+0-9]/g,'');return 'tel:'+(raw.startsWith('+')?raw:'+86'+raw.replace(/^0/,''))}
 export function matchHotels(query, catalogue) {
   const terms=String(query||'').trim().split(/\s+/).map(normalize).filter(Boolean);
