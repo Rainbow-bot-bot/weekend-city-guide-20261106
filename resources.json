@@ -8,10 +8,20 @@
     },
     "hotel": {
       "name": "全季酒店（上海徐汇岳阳路店）",
-      "url": "https://hotels.ctrip.com/hotels/2298617.html",
+      "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-2298617/ji-hotel/",
       "address": "徐汇区岳阳路58号",
       "area": "衡山路·淮海路·衡复街区",
-      "position": "酒店页列武康路约1.5公里、安福路约1.4公里，适合作为衡复街区落脚点。"
+      "position": "酒店页列武康路约1.5公里、安福路约1.4公里，适合作为衡复街区落脚点。",
+      "phone": "021-52731133",
+      "checkIn": "14:00后",
+      "checkOut": "12:00前",
+      "rooms": [
+        "大床房",
+        "高级双床房",
+        "商务大床房"
+      ],
+      "tip": "适合武康路与衡复街区探索；房型与当天房价以详情页为准。",
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
     },
     "guides": [
       {
@@ -26,6 +36,11 @@
         "url": "https://www.meet-in-shanghai.net/cn/guide/xujiahuiyuan-city-walk-611364/",
         "description": "徐家汇书院、气象博物馆、百代小楼等线路。藏书楼在此旧攻略中标注维修暂停开放，勿写成保证可入内。"
       }
+    ],
+    "tips": [
+      "以公共街区和建筑外观游览为主，不进入居民私人空间。",
+      "起点武康大楼，沿武康路到安福路；总步行约3公里。",
+      "路口拍照不要站上车道。咖啡、购物为可选消费。"
     ]
   },
   "central": {
@@ -37,10 +52,20 @@
     },
     "hotel": {
       "name": "城际上海外滩南京路步行街酒店",
-      "url": "https://hotels.ctrip.com/hotels/131743584.html",
+      "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-131743584/intercity-hotel-shanghai-nanjing-road-pedestrian-street-the-bund/",
       "address": "黄浦区福州路431号",
       "area": "人民广场·南京东路",
-      "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。"
+      "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。",
+      "phone": "021-63203999",
+      "checkIn": "15:00后",
+      "checkOut": "12:00前",
+      "rooms": [
+        "尊享家庭房",
+        "尊享大床房",
+        "好莱坞大床房"
+      ],
+      "tip": "位于福州路，适合人民广场、书城与外滩路线；住宿费另计。",
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
     },
     "guides": [
       {
@@ -49,6 +74,11 @@
         "url": "https://www.meet-in-shanghai.net/cn/shanghai-citywalk-route-recommendation/explore-the-depths-of-huangpu-to-explore-modernity-352163/",
         "description": "官方线路：人民广场→南京路步行街→外滩建筑群→洛克·外滩源。人民公园可作为人民广场侧的自行延伸，不冒充原文线路。"
       }
+    ],
+    "tips": [
+      "以人民广场、南京东路与外滩的公共空间为主，按所选路线串联。",
+      "户外路线请先看天气；晚间注意返程交通与人流。",
+      "不包含观光塔、游船等收费项目，灯光实际安排以现场为准。"
     ]
   },
   "westbund": {
@@ -60,10 +90,20 @@
     },
     "hotel": {
       "name": "全季酒店（上海徐汇滨江西岸艺术中心店）",
-      "url": "https://hotels.ctrip.com/hotels/122191710.html",
+      "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-122191710/ji-hotel/",
       "address": "徐汇区龙腾大道2879号1层",
       "area": "西岸·徐汇滨江",
-      "position": "酒店页列西岸艺术中心约760米、徐汇滨江绿地约620米。"
+      "position": "酒店页列西岸艺术中心约760米、徐汇滨江绿地约620米。",
+      "phone": "021-33686866",
+      "checkIn": "14:00后",
+      "checkOut": "12:00前",
+      "rooms": [
+        "商务大床房",
+        "高级双床房",
+        "家庭房"
+      ],
+      "tip": "页面提示可能在其他地址办理入住，到店前请电话确认办理地点。",
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
     },
     "guides": [
       {
@@ -84,6 +124,11 @@
         "url": "https://www.westbund.com/cn/index/Visitors_guide/Location/Long-Museum-West-Bund.html",
         "description": "龙腾大道3398号，西岸官方场馆介绍。"
       }
+    ],
+    "tips": [
+      "路线含龙美术馆、徐汇滨江、西岸美术馆；公共空间与入馆看展分开安排。",
+      "入馆前打开场馆公开参观指南核对展览、票价与预约。",
+      "预算中的60元是看展预留额度，不代表当期展览售价；可改走滨江公共空间。"
     ]
   },
   "library": {
@@ -122,11 +167,26 @@
     },
     "hotel": {
       "name": "城际上海外滩南京路步行街酒店",
-      "url": "https://hotels.ctrip.com/hotels/131743584.html",
+      "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-131743584/intercity-hotel-shanghai-nanjing-road-pedestrian-street-the-bund/",
       "address": "黄浦区福州路431号",
       "area": "人民广场·南京东路",
-      "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。"
-    }
+      "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。",
+      "phone": "021-63203999",
+      "checkIn": "15:00后",
+      "checkOut": "12:00前",
+      "rooms": [
+        "尊享家庭房",
+        "尊享大床房",
+        "好莱坞大床房"
+      ],
+      "tip": "位于福州路，适合人民广场、书城与外滩路线；住宿费另计。",
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
+    },
+    "tips": [
+      "人民广场馆当前为美洲古代文明特展，所有观众需购票，不是免费常设展。",
+      "周末成人148元；全日制本科及以下在读学生74元，需有效证件。本站139元路线预算按学生票计算，成人约213元。",
+      "9:00–17:00开放，15:00停止入场；周一闭馆（法定节假日例外）。预约方式见公开官方指南。"
+    ]
   },
   "bookstore": {
     "guide": {
@@ -135,10 +195,25 @@
     },
     "hotel": {
       "name": "城际上海外滩南京路步行街酒店",
-      "url": "https://hotels.ctrip.com/hotels/131743584.html",
+      "url": "https://hk.trip.com/hotels/shanghai-hotel-detail-131743584/intercity-hotel-shanghai-nanjing-road-pedestrian-street-the-bund/",
       "address": "黄浦区福州路431号",
       "area": "人民广场·南京东路",
-      "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。"
-    }
+      "position": "酒店页列人民广场约860米、南京东路站约530米、外滩约1.2公里。",
+      "phone": "021-63203999",
+      "checkIn": "15:00后",
+      "checkOut": "12:00前",
+      "rooms": [
+        "尊享家庭房",
+        "尊享大床房",
+        "好莱坞大床房"
+      ],
+      "tip": "位于福州路，适合人民广场、书城与外滩路线；住宿费另计。",
+      "accessChecked": "2026-11-06 · 无登录Cookie访问200，未跳登录页"
+    },
+    "tips": [
+      "上海书城福州路店位于黄浦区福州路465号，按书店实际营业安排到访。",
+      "以店内逛书与短途步行为主；买书与额外购物不含在默认预算。",
+      "这条路线没有预设付费活动。可从福州路附近的住处或你自己的地址出发。"
+    ]
   }
 }
