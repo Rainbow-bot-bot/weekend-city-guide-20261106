@@ -1,4 +1,5 @@
-import {escapeHTML as esc, mapUrl,photoSources,routes} from './data.js?v=20261106e';
+import{placePin,pinnedDirections}from'./navigation-points.js?v=20261107a';
+import {escapeHTML as esc, mapUrl,photoSources,routes} from './data.js?v=20261107a';
 
 export const hotelNotes = {
   central: {label:'福州路 · 书城与外滩之间', reason:'福州路上的落脚点，适合把书城、人民广场和外滩放进同一个周末。不必为了不同主题反复换住处。', aliases:['城际','外滩城际','南京路城际','福州路城际','intercity','chengji','fuzhou'], fit:'书城 · 人民广场 · 外滩'},
@@ -33,13 +34,17 @@ export function startFor(route) {
   return null;
 }
 export function directionsURL(start,destination,mode='walking',city='上海') {
+  const from=start.hotel && placePin(start.hotel.city,start.hotel.name), to=placePin(city,destination);
+  if(from && to)return pinnedDirections(from,to,mode);
+  // Text and WGS-84 origins still use their native format; never mix them with GCJ-02.
+
   const point=start.coords?`${start.coords.latitude},${start.coords.longitude}`:start.hotel?(start.hotel.address.includes(start.hotel.city||'上海')?'':(start.hotel.city||'上海')+'市')+start.hotel.address:(start.cityName&&!start.name.includes(start.cityName)?start.cityName+'市':'')+start.name;
-  return 'https://maps.apple.com/directions?'+new URLSearchParams({source:point,destination:city+'市'+destination,mode}).toString();
+  return 'https://maps.apple.com/directions?'+new URLSearchParams({source:point,destination:to?city+'市'+to.address+' '+to.name:city+'市'+destination,mode}).toString();
 }
 export function originTimeline(route) {
-  const start=startFor(route);
+  const start=startFor(route), first=route.stops[0][1], target=placePin(route.cityName,first);
   if(!start)return `<li class="origin-stop origin-needed"><time>出门前</time><div class="stop"><h4>从你的住处接上这段旅程</h4><p>填好出发地点，就能导航到第一站。</p><button class="text-button" data-set-origin data-origin-city="${esc(route.city||'shanghai')}">填写住处或定位 ↗</button></div></li>`;
-  return `<li class="origin-stop"><time>先出发</time><div class="stop"><h4>${esc(start.name)}</h4><p>${start.hotel?'从住处出发':'你的出发地点'}</p>${start.hotel?`<p class="hotel-address">${esc(start.hotel.address)} · 入住 ${esc(start.hotel.checkIn||'以酒店为准')}</p>`:''}<div class="origin-links"><a href="${esc(directionsURL(start,route.stops[0][1],'walking',route.cityName))}" target="_blank" rel="noopener noreferrer">到第一站 · 步行导航 ↗</a><a href="${esc(directionsURL(start,route.stops[0][1],'driving',route.cityName))}" target="_blank" rel="noopener noreferrer">到第一站 · 驾车导航 ↗</a>${start.hotel?`<a href="${esc(start.hotel.url)}" target="_blank" rel="noopener noreferrer">酒店公开详情 ↗</a>`:''}</div></div></li>`;
+  return `<li class="origin-stop"><time>先出发</time><div class="stop"><h4>${esc(start.name)}</h4><p>${start.hotel?'从住处出发':'你的出发地点'}</p>${start.hotel?`<p class="hotel-address">${esc(start.hotel.address)} · 入住 ${esc(start.hotel.checkIn||'以酒店为准')}</p>`:''}${target?`<p>第一站：<a href="${esc(mapUrl(first,route.cityName))}" target="_blank" rel="noopener noreferrer">${esc(first)} · ${esc(target.address)} ↗</a></p>`:''}<div class="origin-links"><a href="${esc(directionsURL(start,route.stops[0][1],'walking',route.cityName))}" target="_blank" rel="noopener noreferrer">到第一站 · 步行导航 ↗</a><a href="${esc(directionsURL(start,route.stops[0][1],'driving',route.cityName))}" target="_blank" rel="noopener noreferrer">到第一站 · 驾车导航 ↗</a>${start.hotel?`<a href="${esc(start.hotel.url)}" target="_blank" rel="noopener noreferrer">酒店公开详情 ↗</a>`:''}</div></div></li>`;
 }
 export function setupOrigin(resources,city={id:'shanghai',name:'上海'}) {
   currentCity=city;origin={mode:'unset',address:'',hotel:null,coords:null};const generation=++originGeneration;originController?.abort();originController=new AbortController();

@@ -1,12 +1,12 @@
-import{renderArticle,renderOverview}from'./article-view.js?v=20261106e';
-import{renderResources}from'./resources-view.js?v=20261106e';
+import{renderArticle,renderOverview}from'./article-view.js?v=20261107a';
+import{renderResources}from'./resources-view.js?v=20261107a';
 import{stories,quickReasons,cityCopy}from'./stories.js?v=20261106e';
-import{setupOrigin,originTimeline}from'./origin.js?v=20261106e';
-import{routes,cities,budgetFromInput,photoSources,totalCost,recommendRoutes,mapUrl,escapeHTML as esc,encodeShare,decodeShare}from'./data.js?v=20261106e';
+import{setupOrigin,originTimeline}from'./origin.js?v=20261107a';
+import{routes,cities,budgetFromInput,photoSources,totalCost,recommendRoutes,mapUrl,escapeHTML as esc,encodeShare,decodeShare}from'./data.js?v=20261107a';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const key='weekend-go-v1';let stored={};try{stored=JSON.parse(localStorage.getItem(key)||'{}')}catch{}
 const state={view:'discover',filters:{city:cities.some(c=>c.id===stored.city)?stored.city:'shanghai',budget:150,people:2,duration:'half',interests:[],easy:false,weather:'sunny'},plans:Array.isArray(stored.plans)?stored.plans.filter(id=>routes.some(r=>r.id===id)):[],active:stored.active||'',meet:stored.meet||{},notes:Array.isArray(stored.notes)?stored.notes:[]};
-let resources={};try{const response=await fetch('./resources.json?v=20261106e');if(response.ok)resources=await response.json()}catch{}
+let resources={};try{const response=await fetch('./resources.json?v=20261107a');if(response.ok)resources=await response.json()}catch{}
 function persist(){try{localStorage.setItem(key,JSON.stringify({city:state.filters.city,plans:state.plans,active:state.active,meet:state.meet,notes:state.notes}))}catch{toast('浏览器未允许保存，当前记录可能无法保留。')}$('#plan-count').textContent=state.plans.length}
 let toastTimer;function toast(message){$('#toast').textContent=message;$('#toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').classList.remove('show'),2600)}
 function routeById(id){return routes.find(r=>r.id===id)}

@@ -1,4 +1,4 @@
-import{photoSources,escapeHTML as esc,mapUrl,totalCost}from'./data.js?v=20261106e';
+import{photoSources,escapeHTML as esc,mapUrl,totalCost}from'./data.js?v=20261107a';
 import{stories}from'./stories.js?v=20261106e';
 
 export function articleLength(story){return [...story.paragraphs,...story.sections.flatMap(s=>s.paragraphs)].join('').length}

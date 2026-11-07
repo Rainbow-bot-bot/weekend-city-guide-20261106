@@ -1,3 +1,4 @@
+import{placePin,placePage}from'./navigation-points.js?v=20261107a';
 import{stories}from'./stories.js?v=20261106e';
 import{editorialPhotos}from'./editorial-assets.js?v=20261106e';
 import{additionalCities,additionalRoutes,additionalPhotos}from'./city-data.js?v=20261106e';
@@ -26,7 +27,7 @@ export const cities=[{id:'shanghai',name:'上海',english:'SHANGHAI',heroImage:'
 export function budgetFromInput(value){if(String(value).trim()==='')return Infinity;const n=Number(value);return Number.isFinite(n)&&n>=0&&n<=10000?n:null}
 export const totalCost=r=>Object.values(r.cost).reduce((a,b)=>a+b,0);
 export function recommendRoutes(filters){return routes.filter(r=>(!filters.city||r.city===filters.city)&&totalCost(r)<=filters.budget&&(!filters.easy||r.km<=2)&&(!filters.interests.length||filters.interests.some(t=>r.interests.includes(t)))&&(filters.duration==='all'||filters.duration==='day'||r.hours<=(filters.duration==='short'?3:5))&&(filters.weather!=='rainy'||r.indoor)).map(r=>({route:r,score:(r.people.includes(filters.people)?8:0)+filters.interests.filter(t=>r.interests.includes(t)).length*12+(filters.weather==='sunny'&&!r.indoor?10:0)+(r.id==='wukang'?2:0)})).sort((a,b)=>b.score-a.score).map(x=>x.route)}
-export function mapUrl(place,city='上海'){return 'https://uri.amap.com/search?keyword='+encodeURIComponent(place)+'&city='+encodeURIComponent(city)+'&view=map&src=weekendgo&coordinate=gaode'}
+export function mapUrl(place,city='上海'){const pin=placePin(city,place);if(pin)return placePage(pin);return 'https://uri.amap.com/search?keyword='+encodeURIComponent(place)+'&city='+encodeURIComponent(city)+'&view=map&src=weekendgo&coordinate=gaode'}
 export const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function encodeShare(value){return btoa(Array.from(new TextEncoder().encode(JSON.stringify(value)),b=>String.fromCharCode(b)).join('')).replaceAll('+','-').replaceAll('/','_').replace(/=+$/,'')}
 export function decodeShare(value){if(value.length>18000)throw new Error('分享内容过长');const normal=value.replaceAll('-','+').replaceAll('_','/');return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(normal),c=>c.charCodeAt(0))))}
