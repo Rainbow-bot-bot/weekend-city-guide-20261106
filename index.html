@@ -5,7 +5,7 @@
   <meta name="theme-color" content="#244e43"><meta name="description" content="上海、杭州、苏州、北京与成都的城市图文导览，附实拍照片、行程地图、花费与附近住处。按预算和天气选择，邀请朋友出发。">
   <title>周末就走 · 城市图文导览</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23244e43'/%3E%3Cpath d='M18 43L28 19l5 15 14 5-29 4Z' fill='%23f4e5bc'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./style.css?v=20261106e">
+  <link rel="stylesheet" href="./style.css?v=20261107b">
 </head>
 <body>
 <header class="site-header"><a class="brand" href="#" aria-label="周末就走首页"><span class="brand-mark">↗</span><span>周末就走<small>WEEKEND, WANDER.</small></span></a><nav aria-label="主导航"><button class="nav-link active" data-view="discover">发现周末</button><button class="nav-link" data-view="plan">出发计划 <span id="plan-count" class="counter">0</span></button><button class="nav-link" data-view="footprints">我的足迹</button></nav><button id="city-toggle" class="city-toggle" aria-haspopup="dialog" aria-controls="city-dialog"><span class="live-dot"></span><span id="current-city">上海</span><span class="city-chevron">⌄</span></button></header>
@@ -40,5 +40,5 @@
 <dialog id="share-dialog"><button class="close-button" data-close aria-label="关闭分享">×</button><div id="share-content"></div></dialog>
 <dialog id="checkin-dialog"><button class="close-button" data-close aria-label="关闭打卡">×</button><form id="checkin-form"><div class="eyebrow">A LITTLE MEMORY</div><h2>记录这次出行</h2><label class="field-label" for="checkin-route">在哪条路线留下足迹</label><select id="checkin-route" required></select><label class="field-label" for="checkin-note">有什么值得记住？</label><textarea id="checkin-note" maxlength="500" rows="5" placeholder="哪一处值得去？花了多少钱？有什么需要提前准备？" required></textarea><div class="form-row"><div><label class="field-label" for="checkin-cost">实际人均花费（选填）</label><input id="checkin-cost" type="number" min="0" max="10000" placeholder="¥"></div><div><label class="field-label" for="checkin-rating">这次体验</label><select id="checkin-rating"><option value="5">★★★★★ 很值得</option><option value="4">★★★★ 挺开心</option><option value="3">★★★ 还不错</option><option value="2">★★ 有点遗憾</option><option value="1">★ 不太推荐</option></select></div></div><p class="muted">手动打卡，不获取定位。仅保存在当前浏览器，分享后对方可查看。</p><button type="submit" class="button primary full-width">保存记录 ↗</button></form></dialog>
 <div id="toast" role="status" aria-live="polite"></div>
-<script type="module" src="./app.js?v=20261107a"></script>
+<script type="module" src="./app.js?v=20261107b"></script>
 </body></html>

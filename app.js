@@ -1,7 +1,7 @@
 import{renderArticle,renderOverview}from'./article-view.js?v=20261107a';
-import{renderResources}from'./resources-view.js?v=20261107a';
+import{renderResources}from'./resources-view.js?v=20261107b';
 import{stories,quickReasons,cityCopy}from'./stories.js?v=20261106e';
-import{setupOrigin,originTimeline}from'./origin.js?v=20261107a';
+import{setupOrigin,originTimeline}from'./origin.js?v=20261107b';
 import{routes,cities,budgetFromInput,photoSources,totalCost,recommendRoutes,mapUrl,escapeHTML as esc,encodeShare,decodeShare}from'./data.js?v=20261107a';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const key='weekend-go-v1';let stored={};try{stored=JSON.parse(localStorage.getItem(key)||'{}')}catch{}

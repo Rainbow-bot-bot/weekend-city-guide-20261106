@@ -1,3 +1,4 @@
+import{walkNotes}from'./walk-notes.js?v=20261107b';
 import{placePin,pinnedDirections}from'./navigation-points.js?v=20261107a';
 import {escapeHTML as esc, mapUrl,photoSources,routes} from './data.js?v=20261107a';
 
@@ -41,10 +42,15 @@ export function directionsURL(start,destination,mode='walking',city='上海') {
   const point=start.coords?`${start.coords.latitude},${start.coords.longitude}`:start.hotel?(start.hotel.address.includes(start.hotel.city||'上海')?'':(start.hotel.city||'上海')+'市')+start.hotel.address:(start.cityName&&!start.name.includes(start.cityName)?start.cityName+'市':'')+start.name;
   return 'https://maps.apple.com/directions?'+new URLSearchParams({source:point,destination:to?city+'市'+to.address+' '+to.name:city+'市'+destination,mode}).toString();
 }
+export function walkNote(start,first,city){
+  const from=start?.hotel&&placePin(start.hotel.city,start.hotel.name),to=placePin(city,first);
+  const walk=from&&to&&walkNotes[from.id+':'+to.id];if(!walk)return '';
+  return `<details class="walk-note"><summary>查看步行路书 · 约 ${(walk.distance/1000).toFixed(1)} 公里 / ${Math.round(walk.seconds/60)} 分钟</summary><div><p>酒店到第一站的路程，另计于街区游览。路书按 2026 年 11 月 7 日的路网估算。</p><a href="${esc(walk.url)}" target="_blank" rel="noopener noreferrer">在 OpenStreetMap 查看步行地图 ↗</a><ol class="walk-note-steps">${walk.steps.map(t=>`<li>${esc(t)}</li>`).join('')}</ol><small>路线：<a href="https://routing.openstreetmap.de/about.html" target="_blank" rel="noopener noreferrer">FOSSGIS / OSRM</a> · 地图数据 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap 贡献者</a></small></div></details>`;
+}
 export function originTimeline(route) {
   const start=startFor(route), first=route.stops[0][1], target=placePin(route.cityName,first);
   if(!start)return `<li class="origin-stop origin-needed"><time>出门前</time><div class="stop"><h4>从你的住处接上这段旅程</h4><p>填好出发地点，就能导航到第一站。</p><button class="text-button" data-set-origin data-origin-city="${esc(route.city||'shanghai')}">填写住处或定位 ↗</button></div></li>`;
-  return `<li class="origin-stop"><time>先出发</time><div class="stop"><h4>${esc(start.name)}</h4><p>${start.hotel?'从住处出发':'你的出发地点'}</p>${start.hotel?`<p class="hotel-address">${esc(start.hotel.address)} · 入住 ${esc(start.hotel.checkIn||'以酒店为准')}</p>`:''}${target?`<p>第一站：<a href="${esc(mapUrl(first,route.cityName))}" target="_blank" rel="noopener noreferrer">${esc(first)} · ${esc(target.address)} ↗</a></p>`:''}<div class="origin-links"><a href="${esc(directionsURL(start,route.stops[0][1],'walking',route.cityName))}" target="_blank" rel="noopener noreferrer">到第一站 · 步行导航 ↗</a><a href="${esc(directionsURL(start,route.stops[0][1],'driving',route.cityName))}" target="_blank" rel="noopener noreferrer">到第一站 · 驾车导航 ↗</a>${start.hotel?`<a href="${esc(start.hotel.url)}" target="_blank" rel="noopener noreferrer">酒店公开详情 ↗</a>`:''}</div></div></li>`;
+  return `<li class="origin-stop"><time>先出发</time><div class="stop"><h4>${esc(start.name)}</h4><p>${start.hotel?'从住处出发':'你的出发地点'}</p>${start.hotel?`<p class="hotel-address">${esc(start.hotel.address)} · 入住 ${esc(start.hotel.checkIn||'以酒店为准')}</p>`:''}${target?`<p>第一站：<a href="${esc(mapUrl(first,route.cityName))}" target="_blank" rel="noopener noreferrer">${esc(first)} · ${esc(target.address)} ↗</a></p>`:''}<div class="origin-links"><a href="${esc(directionsURL(start,route.stops[0][1],'walking',route.cityName))}" target="_blank" rel="noopener noreferrer">到第一站 · 步行导航 ↗</a><a href="${esc(directionsURL(start,route.stops[0][1],'driving',route.cityName))}" target="_blank" rel="noopener noreferrer">到第一站 · 驾车导航 ↗</a>${start.hotel?`<a href="${esc(start.hotel.url)}" target="_blank" rel="noopener noreferrer">酒店公开详情 ↗</a>`:''}</div>${walkNote(start,first,route.cityName)}</div></li>`;
 }
 export function setupOrigin(resources,city={id:'shanghai',name:'上海'}) {
   currentCity=city;origin={mode:'unset',address:'',hotel:null,coords:null};const generation=++originGeneration;originController?.abort();originController=new AbortController();

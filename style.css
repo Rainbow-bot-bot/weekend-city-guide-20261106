@@ -77,3 +77,5 @@
 @media(prefers-reduced-motion:reduce){.detail-dialog{scroll-behavior:auto}}
 
 body:has(#detail-dialog[open]){overflow:hidden}.article-heading h2{text-wrap:balance}
+
+.walk-note{margin:12px 0 0;border-top:1px solid #d5ddcb;padding-top:10px;color:var(--green)}.walk-note summary{cursor:pointer;font-size:12px;line-height:1.8}.walk-note>div{padding:4px 0 2px}.walk-note small{display:block;line-height:1.8;font-size:10px}.timeline .walk-note-steps{list-style:decimal;margin:12px 0;padding-left:24px}.timeline .walk-note-steps>li{display:list-item;position:static;margin:0;padding:2px 0;font-size:12px;line-height:1.8}.timeline .walk-note-steps>li:before{display:none}
