@@ -27,7 +27,7 @@
       <label class="check-label"><input type="checkbox" id="easy"> 今天想少走一点路</label>
       <div class="filter-tip"><span>✦</span><p>兴趣可多选。<br>不勾选时展示全部主题。</p></div>
     </aside>
-    <div class="results"><div class="results-toolbar"><div class="weather-switch" aria-label="天气情景"><button class="selected" data-weather="sunny">☀ 晴天版</button><button data-weather="rainy">☂ 雨天版</button></div><span id="result-count" aria-live="polite"></span></div><div class="weather-advice" id="weather-advice"></div><div id="route-grid" class="route-grid"></div><details class="source-note"><summary>照片与行程资料</summary><p>配图来源见详情，均为往期实拍。预算按半日游玩估算，住宿及城际交通另计；天气按钮用于切换晴雨行程。</p></details></div>
+    <div class="results"><div class="results-toolbar"><div class="weather-switch" aria-label="天气情景"><button class="selected" data-weather="sunny">☀ 晴天版</button><button data-weather="rainy">☂ 雨天版</button></div><span id="result-count" aria-live="polite"></span></div><div class="weather-advice" id="weather-advice"></div><p id="duration-notice" class="practical-note" aria-live="polite" hidden></p><div id="route-grid" class="route-grid"></div><details class="source-note"><summary>照片与行程资料</summary><p>配图来源见详情，均为往期实拍。预算按半日游玩估算，住宿及城际交通另计；天气按钮用于切换晴雨行程。</p></details></div>
   </div>
 
 </section>
@@ -40,5 +40,5 @@
 <dialog id="share-dialog"><button class="close-button" data-close aria-label="关闭分享">×</button><div id="share-content"></div></dialog>
 <dialog id="checkin-dialog"><button class="close-button" data-close aria-label="关闭打卡">×</button><form id="checkin-form"><div class="eyebrow">A LITTLE MEMORY</div><h2>记录这次出行</h2><label class="field-label" for="checkin-route">在哪条路线留下足迹</label><select id="checkin-route" required></select><label class="field-label" for="checkin-note">有什么值得记住？</label><textarea id="checkin-note" maxlength="500" rows="5" placeholder="哪一处值得去？花了多少钱？有什么需要提前准备？" required></textarea><div class="form-row"><div><label class="field-label" for="checkin-cost">实际人均花费（选填）</label><input id="checkin-cost" type="number" min="0" max="10000" placeholder="¥"></div><div><label class="field-label" for="checkin-rating">这次体验</label><select id="checkin-rating"><option value="5">★★★★★ 很值得</option><option value="4">★★★★ 挺开心</option><option value="3">★★★ 还不错</option><option value="2">★★ 有点遗憾</option><option value="1">★ 不太推荐</option></select></div></div><p class="muted">手动打卡，不获取定位。仅保存在当前浏览器，分享后对方可查看。</p><button type="submit" class="button primary full-width">保存记录 ↗</button></form></dialog>
 <div id="toast" role="status" aria-live="polite"></div>
-<script type="module" src="./app.js?v=20261107b"></script>
+<script type="module" src="./app.js?v=20261108a"></script>
 </body></html>
